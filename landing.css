@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+--base-black : #121212;
+--black-50: #3A3A3A;
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url('./font2/CabinetGrotesk-Medium.otf');
+} 
+
+body {
+    position: relative;
+    font-family: sat;
+    font-family: 'Satoshi', sans-serif;
+   
+}
+
+
+.blur-purple {
+    background-color: red;
+    /* position: absolute; */
+    /* width: 100vw;
+       height: 100vh;
+       background-color: red; */
+}
+
+.purple-blur {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(100.96deg, #693FC2 -1.85%, #807EF0 42.43%, #173DE7 99.49%);
+    position: absolute;
+    filter: blur(50px);
+}
+
+.purple-blur:nth-of-type(1) {
+    top: 200px;
+    left: 200px;
+}
+
+.purple-blur:nth-of-type(2) {
+    right: 100px;
+
+}
+
+.purple-blur:nth-of-type(3) {
+    top: 200px;
+    right: 600px;
+}
+
+.purple-blur:nth-of-type(4) {
+    left: 100px;
+    top: 450px;
+}
+
+.purple-blur:nth-of-type(5) {
+    top: 400px;
+    right: 600px;
+}
+
+.purple-blur:nth-of-type(6) {
+    top: 300px;
+    right: 0px;
+}
+
+
+/* -----------HEADER------ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 7rem;
+    background: white;
+}
+
+
+button{
+    cursor: pointer;
+}
+
+.logo img {
+    width: 90px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+li {
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons button:nth-of-type(1) {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    gap: 10px;
+    align-items: center;
+}
+
+.buttons img {
+    width: 10px;
+}
+
+button p {
+    background: linear-gradient(100.96deg, #693FC2 -1.85%, #807EF0 42.43%, #173DE7 99.49%);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.normal-button{
+    background: linear-gradient(100.96deg, #693FC2 -1.85%, #807EF0 42.43%, #173DE7 99.49%);
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ============hero section ========================================================== */
+.hero{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-image: url('./images/Noise effect.png');
+    background-repeat: repeat;
+}
+.hero h1{
+    text-align: center;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    max-width: 45rem;
+    line-height: 3.7rem;
+    margin:  0 auto;
+    word-spacing: 3px;
+    color: var(--base-black);
+    
+    letter-spacing: 1.1px;
+}
+
+.hero p:nth-of-type(1){
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 35rem;
+    margin:  0 auto;
+    color: var(--black-50);
+    margin-top: 1rem;
+}
+
+.hero p:nth-of-type(2){
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 35rem;
+    margin:  0 auto;
+    color: var(--black-50);
+    margin-top: 3rem;
+}
+
+.hero .normal-button{
+    margin: 0 auto;
+    margin-top: 2.5rem;
+}
+
+/* ================================ TRADE VOLUMES ========================== */
+.trade-volumes{
+margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.td-item > h3{
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.td-item > small{
+    color: #616161;
+    font-size: 11px;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
+
+/* ========================= CRYPTO ASSETS==================== */
+
+.crypto-assets{
+    /* border: 2px solid red; */
+    padding: 2rem 4rem;
+}
+
+
+.crypto-assets > h1{
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+.crypto-assets > p{
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 32rem;
+    opacity: 0.8;
+}
+.cards-container{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.cards{
+    max-width: 18rem;
+    background-image: url('./images/Noise effect.png');
+    padding: 5rem 2rem;
+}
+
+.cards img{
+    width: 60px;
+}
+
+.cards:nth-of-type(1){
+    background-color: black;
+    color: whitesmoke;
+}
+
+.cards h3{
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    max-width: 8rem;
+    font-weight: 700;
+}
+
+.cards p{
+    font-size: 12px;
+    max-width: 18rem;
+
+}
+
+
+.crypto-assets button{
+    margin-top: 3rem;
+}
