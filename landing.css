@@ -3,9 +3,9 @@
     margin: 0;
 }
 
-:root{
---base-black : #121212;
---black-50: #3A3A3A;
+:root {
+    --base-black: #121212;
+    --black-50: #3A3A3A;
 }
 
 @font-face {
@@ -16,13 +16,13 @@
 @font-face {
     font-family: 'Cabinet Grotesk';
     src: url('./font2/CabinetGrotesk-Medium.otf');
-} 
+}
 
 body {
     position: relative;
     font-family: sat;
     font-family: 'Satoshi', sans-serif;
-   
+
 }
 
 
@@ -84,7 +84,7 @@ header {
 }
 
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -104,7 +104,8 @@ li {
     font-size: 16px;
     cursor: pointer;
 }
-.buttons{
+
+.buttons {
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -132,7 +133,7 @@ button p {
     font-size: 16px;
 }
 
-.normal-button{
+.normal-button {
     background: linear-gradient(100.96deg, #693FC2 -1.85%, #807EF0 42.43%, #173DE7 99.49%);
     border: none;
     width: 10rem;
@@ -147,66 +148,67 @@ button p {
 }
 
 /* ============hero section ========================================================== */
-.hero{
+.hero {
     padding-top: 5rem;
     padding-bottom: 3rem;
     background-image: url('./images/Noise effect.png');
     background-repeat: repeat;
 }
-.hero h1{
+
+.hero h1 {
     text-align: center;
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 700;
     font-size: 40px;
     max-width: 45rem;
     line-height: 3.7rem;
-    margin:  0 auto;
+    margin: 0 auto;
     word-spacing: 3px;
     color: var(--base-black);
-    
+
     letter-spacing: 1.1px;
 }
 
-.hero p:nth-of-type(1){
+.hero p:nth-of-type(1) {
     text-align: center;
     font-weight: 400;
     font-size: 18px;
     max-width: 35rem;
-    margin:  0 auto;
+    margin: 0 auto;
     color: var(--black-50);
     margin-top: 1rem;
 }
 
-.hero p:nth-of-type(2){
+.hero p:nth-of-type(2) {
     text-align: center;
     font-weight: 400;
     font-size: 14px;
     max-width: 35rem;
-    margin:  0 auto;
+    margin: 0 auto;
     color: var(--black-50);
     margin-top: 3rem;
 }
 
-.hero .normal-button{
+.hero .normal-button {
     margin: 0 auto;
     margin-top: 2.5rem;
 }
 
 /* ================================ TRADE VOLUMES ========================== */
-.trade-volumes{
-margin-top: 1rem;
+.trade-volumes {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 3rem;
 }
 
-.td-item > h3{
+.td-item>h3 {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
 }
 
-.td-item > small{
+.td-item>small {
     color: #616161;
     font-size: 11px;
     font-weight: 500;
@@ -217,49 +219,50 @@ margin-top: 1rem;
 
 /* ========================= CRYPTO ASSETS==================== */
 
-.crypto-assets{
+.crypto-assets {
     /* border: 2px solid red; */
     padding: 2rem 4rem;
 }
 
 
-.crypto-assets > h1{
+.crypto-assets>h1 {
     font-family: 'Cabinet Grotesk', sans-serif;
     font-weight: 700;
     font-size: 30px;
 }
 
 
-.crypto-assets > p{
+.crypto-assets>p {
     font-weight: 400;
     font-size: 14px;
     max-width: 32rem;
     opacity: 0.8;
 }
-.cards-container{
+
+.cards-container {
     margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 
-.cards{
+.cards {
     max-width: 18rem;
     background-image: url('./images/Noise effect.png');
     padding: 5rem 2rem;
 }
 
-.cards img{
+.cards img {
     width: 60px;
 }
 
-.cards:nth-of-type(1){
+.cards:nth-of-type(1) {
     background-color: black;
     color: whitesmoke;
 }
 
-.cards h3{
+.cards h3 {
     font-size: 24px;
     margin-bottom: 1rem;
     margin-top: 2.5rem;
@@ -267,13 +270,135 @@ margin-top: 1rem;
     font-weight: 700;
 }
 
-.cards p{
+.cards p {
     font-size: 12px;
     max-width: 18rem;
 
 }
 
 
-.crypto-assets button{
+.crypto-assets button {
     margin-top: 3rem;
+}
+
+
+/* ===================================MULTI -CHAIN========================== */
+.multi-chains {
+    margin-bottom: 9rem;
+    overflow: hidden;
+}
+
+.mu-ch-header {
+    padding: 2rem 4rem;
+
+}
+
+.mu-ch-header h1 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.mu-ch-header p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3A3A3A;
+    max-width: 30rem;
+    margin-top: 0.5rem;
+}
+
+.flow-container {
+    display: flex;
+    justify-content: space-between;
+    animation: marquee 10s infinite linear;
+    /* notice the infinite */
+    margin-bottom: 3rem;
+}
+
+.flow-containe2 {
+    display: flex;
+    justify-content: space-between;
+    animation: marquee2 10s infinite linear;
+    /* notice the infinite */
+}
+
+.f-con-item {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+
+    height: 4rem;
+    gap: 1.2rem;
+
+    padding-left: 1rem;
+    padding-right: 2.3rem;
+
+}
+
+.f-con-item>img {
+    max-width: 40px;
+}
+
+.f-con-item>p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+/* =======================MYSELF============ */
+.myself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 45rem;
+
+    margin: 4rem auto;
+}
+
+.myself>p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 1.4rem;
+
+    text-align: center;
+}
+
+.myself>h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.myself small {
+    font-weight: 500;
+    font-size: 14px;
+    color: #616161;
+    margin-top: 10px;
+}
+
+.myself button{
+    margin-top: 1rem;
 }
