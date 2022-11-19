@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -79,17 +80,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.3rem 7rem;
     background: white;
+    position: fixed;
+    width: 100vw;
+    height: 6rem;
+    z-index: 999;
+    padding: 0 4rem;
 }
+
+/* header> *{
+    flex:  1 1 100%;
+} */
 
 
 button {
     cursor: pointer;
+ 
 }
 
 .logo img {
-    width: 90px;
+    max-width: 90px;
 }
 
 ul {
@@ -109,6 +119,7 @@ li {
     display: flex;
     align-items: center;
     gap: 2rem;
+justify-content: flex-end;
 }
 
 .buttons button:nth-of-type(1) {
@@ -399,6 +410,68 @@ button p {
     margin-top: 10px;
 }
 
-.myself button{
+.myself button {
     margin-top: 1rem;
+}
+
+/* ===================== FOOTER */
+.end {
+    background-color: black;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: #D0D0D0;
+    ;
+
+}
+
+.logo-end {
+    margin: 0rem auto;
+    max-width: 100px;
+}
+
+.end ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 2rem;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 0 8rem;
+}
+
+.black-line {
+    background-color: rgb(43, 43, 43);
+    width: 90%;
+    height: 0.8px;
+    margin: 6rem auto 1rem auto;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 2rem auto 0 auto;
+}
+
+.end-footer>div:nth-of-type(1) {
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+
+    gap: 2rem;
+}
+
+.v-line {
+    background-color: rgb(43, 43, 43);
+    height: 4rem;
+    width: 0.8px;
+}
+
+.end-footer>div:nth-of-type(3) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    font-size: 24px;
 }
